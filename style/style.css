@@ -1,0 +1,113 @@
+@import url(./fonts.css );
+
+*{
+margin: 0;
+padding: 0;
+text-decoration: none;
+list-style: none;
+box-sizing: border-box;
+}
+
+:root{
+--white:white;
+--black: black;
+--RalewayBlack:'Raleway-Black';
+--RalewayBold:'Raleway-Bold';
+--RalewayRegular:'Raleway-Regular';
+--RalewayThin:'Raleway-Thin';
+--RB:'RB';
+--RR:'RR'
+}
+
+.container{
+max-width: 1320px;
+width: 100%;
+margin: 0 auto;
+padding: 0 15px;
+}
+
+body{
+background-color: var(--black);
+}
+
+.nav_up{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.up{
+    display: flex;
+    gap: 5px;
+    align-items: center; 
+}
+
+.up span{
+    font-family: var(--RR);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--white);
+
+}
+
+.up__list{
+
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.up__list_link a{
+    font-family: var(--RR);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;   
+    text-align: right;
+    color: var(--white);
+}
+
+.nav{
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(125, 115, 115, 0.5);
+    backdrop-filter: blur(7.5px);
+    /* Note: backdrop-filter has minimal browser support */
+
+}
+
+.nav__item{
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+.nav__list{
+    display: flex;
+    align-items: center;
+
+   
+}
+.nav__item a{
+
+display: flex;
+align-items: center;
+}
+.nav__list_link a{
+    font-family: var(--RalewayRegular);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: right;
+    
+    color: var(--white);
+    padding: 22px 13px;
+    transition: .4s linear;
+}
+.nav__list_link a:hover{
+ background: rgba(105, 207, 23, 0.75);
+}
