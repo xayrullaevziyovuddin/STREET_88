@@ -1,36 +1,36 @@
 @import url(./fonts.css );
 
-*{
-margin: 0;
-padding: 0;
-text-decoration: none;
-list-style: none;
-box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
 }
 
-:root{
---white:white;
---black: black;
---RalewayBlack:'Raleway-Black';
---RalewayBold:'Raleway-Bold';
---RalewayRegular:'Raleway-Regular';
---RalewayThin:'Raleway-Thin';
---RB:'RB';
---RR:'RR'
+:root {
+    --white: white;
+    --black: black;
+    --RalewayBlack: 'Raleway-Black';
+    --RalewayBold: 'Raleway-Bold';
+    --RalewayRegular: 'Raleway-Regular';
+    --RalewayThin: 'Raleway-Thin';
+    --RB: 'RB';
+    --RR: 'RR'
 }
 
-.container{
-max-width: 1320px;
-width: 100%;
-margin: 0 auto;
-padding: 0 15px;
+.container {
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
-body{
-background-color: var(--black);
+body {
+    background-color: var(--black);
 }
 
-.nav_up{
+.nav_up {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -38,13 +38,13 @@ background-color: var(--black);
     padding-bottom: 18px;
 }
 
-.up{
+.up {
     display: flex;
     gap: 5px;
-    align-items: center; 
+    align-items: center;
 }
 
-.up span{
+.up span {
     font-family: var(--RR);
     font-style: normal;
     font-weight: 400;
@@ -54,49 +54,141 @@ background-color: var(--black);
 
 }
 
-.up__list{
+.up__list {
 
     display: flex;
     gap: 20px;
     align-items: center;
 }
 
-.up__list_link a{
+.up__list_link a {
     font-family: var(--RR);
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 19px;   
+    line-height: 19px;
     text-align: right;
     color: var(--white);
 }
 
-.nav{
+.nav {
     background: rgba(0, 0, 0, 0.5);
     border: 1px solid rgba(125, 115, 115, 0.5);
     backdrop-filter: blur(7.5px);
     /* Note: backdrop-filter has minimal browser support */
+    position: sticky;
+    z-index: 10;
+}
+
+.nav__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
 }
 
-.nav__item{
-display: flex;
-justify-content: space-between;
-align-items: center;
-
-}
-.nav__list{
+.nav__list {
     display: flex;
     align-items: center;
 
-   
-}
-.nav__item a{
 
-display: flex;
-align-items: center;
 }
-.nav__list_link a{
+
+.nav__item a {
+
+    display: flex;
+    align-items: center;
+}
+
+.nav__list_link a {
+    font-family: var(--RalewayRegular);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: right;
+
+    color: var(--white);
+    padding: 22px 13px;
+    transition: .4s linear;
+}
+
+.nav__list_link a:hover {
+    background: rgba(105, 207, 23, 0.75);
+}
+
+.header__content {
+
+    background: url(../img/bg_header.png) center center / cover;
+    height: 700px;
+
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 167px;
+
+}
+
+.content h1 {
+    font-family: var(--RalewayBlack);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 85px;
+    color: #69CF17;
+}
+
+.content span {
+    font-family: var(--RalewayRegular);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 17px;
+    color: #69CF17;
+    padding-top: 18px;
+
+}
+
+.content p {
+    font-family: var(--RalewayRegular);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding-top: 18px;
+}
+
+.header__button {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    align-items: center;
+}
+
+
+.sall{
+
+/*     padding: 33px 76px; */
+background: rgba(105, 207, 23, 0.5);
+backdrop-filter: blur(9px);
+font-family: var(--RalewayThin);
+font-style: normal;
+font-weight: 100;
+font-size: 50px;
+line-height: 25px;
+
+text-align: right;
+
+color: #FFFFFF;
+border-radius: 10px;
+padding: 33px 76px;
+}
+.button__header_2{
+
     font-family: var(--RalewayRegular);
     font-style: normal;
     font-weight: 400;
@@ -104,10 +196,8 @@ align-items: center;
     line-height: 21px;
     text-align: right;
     
-    color: var(--white);
-    padding: 22px 13px;
-    transition: .4s linear;
-}
-.nav__list_link a:hover{
- background: rgba(105, 207, 23, 0.75);
+    color: #FFFFFF;
+    background: linear-gradient(90deg, #69CF17 0%, #417D11 100%);
+    border-radius: 6px;
+    padding: 15px 68px;
 }
