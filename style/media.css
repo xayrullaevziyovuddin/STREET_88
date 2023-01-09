@@ -1,0 +1,132 @@
+@media(max-width:1200px){
+ .main__list {
+
+        justify-content: center;
+    }
+    .main__cards{
+        grid-template-columns: repeat(2,370px);
+    } 
+
+
+
+
+}
+
+@media(max-width:768px){
+
+    .main__cards {
+        grid-template-columns: repeat(1,370px);
+    }
+
+    .nav__item {
+        padding: 15px 0;
+        flex-direction: column;
+    }
+
+    .item {
+    
+        padding-top: 80px;
+    }
+    .header__button {
+     
+        flex-direction: column;
+        gap: 30px;
+    }
+
+
+
+
+}
+
+@media(max-width:540px){
+
+    .nav{
+        position: initial;
+    }
+    .nav__list {
+     
+        flex-direction: column;
+    }
+
+    .nav__list_link a {
+ 
+        padding: 15px 15px;
+
+    }
+    .nav_up {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        flex-direction: column;
+    }
+    .nav_up {
+ 
+        flex-direction: column;
+    }
+    .main__list {
+   
+        flex-direction: column;
+        align-items: center;
+    }
+    .nuber__logo {
+
+        flex-direction: column;
+        gap: 10px;
+    }
+    .content h1 {
+    
+        font-size: 60px;
+       
+    }
+
+    .main__cards {
+        grid-template-columns: minmax(290px, 370px);}
+        .main__content p {
+        
+            font-size: 12px;
+       
+        }
+        .logo_bg h2 {
+          
+            font-size: 30px;
+        
+        }
+
+
+
+}
+
+
+@media(max-width:375px){
+
+.collor_img{
+    display: none;
+}
+
+.main_card_img img{
+
+    max-width: 200px;
+}
+.item {
+    padding-top: 3px;
+}
+
+.content h1 {
+    font-size: 50px;}
+    .up__list {
+
+        flex-direction: column;
+    }
+    .up {
+  
+        padding: 10px;
+    }
+
+    .logo_bg h2 {
+          
+        font-size: 20px;
+    
+    }
+}
